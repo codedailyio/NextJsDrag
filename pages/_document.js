@@ -4,10 +4,13 @@ import { resetServerContext } from "react-beautiful-dnd";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
+    // specifically with emotion otherwise doesn't matter
+    // call render page first
     const page = await ctx.renderPage();
-    const styles = extractCritical(page.html);
     const initialProps = await Document.getInitialProps(ctx);
+    const styles = extractCritical(page.html);
     resetServerContext();
+
     return { ...initialProps, ...page, ...styles };
   }
 

@@ -8,9 +8,10 @@
     "build:base-css": "tailwindcss build ./styles/tailwind.base.css -o ./styles/base.css"
   },
   "dependencies": {
-    "@emotion/css": "^11.0.0-next.19",
-    "@emotion/react": "^11.0.0-next.19",
-    "@emotion/styled": "^11.0.0-next.19",
+    "@emotion/css": "^11.0.0-rc.0",
+    "@emotion/react": "^11.0.0-rc.0",
+    "@emotion/styled": "^11.0.0-rc.0",
+    "@emotion/server": "^11.0.0-rc.0",
     "immer": "^7.0.9",
     "next": "latest",
     "react": "16.13.1",
@@ -19,8 +20,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@emotion/babel-plugin": "^11.0.0-next.17",
-    "@emotion/server": "^11.0.0-next.19",
+    "@emotion/babel-plugin": "^11.0.0-rc.0",
+    "@emotion/babel-preset-css-prop": "^11.0.0-rc.0",
     "@tailwindcss/ui": "^0.6.2",
     "@tailwindcssinjs/macro": "^0.10.0",
     "babel-plugin-macros": "2.8.0",
